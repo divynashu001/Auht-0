@@ -9,7 +9,11 @@ const AuthRouter = require("./routes/authRouter.js")
 const ProductRouter = require("./routes/productRouter.js")
 
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+  origin: "https://auht.vercel.app", // Replace with your frontend URL
+  methods: "GET,POST,PUT,DELETE",
+  credentials: true, // Allow cookies if using authentication
+}));
 app.use("/auth", AuthRouter)
 app.use("/products", ProductRouter)
 
