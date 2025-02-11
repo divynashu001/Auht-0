@@ -25,7 +25,7 @@ const navigate= useNavigate()
       return handleError("name, email and password are required!")
     }
     try {
-      const response = await axios.post("https://auht-0.onrender.com/signup", 
+      const response = await axios.post("https://auht-0.onrender.com/auth/signup", 
         { name, email, password },
         {
           headers: {

@@ -24,7 +24,7 @@ const Login = () => {
     }
     try {
       const response = await axios.post(
-        "https://auht-0.onrender.com/login",
+        "https://auht-0.onrender.com/auth/login",
         { email, password },
         {
           headers: {
