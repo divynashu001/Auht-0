@@ -23,7 +23,7 @@ const Home = () => {
   const productData = async () => {
 
     try {
-      const response = await axios.get("http://localhost:3000/products",  {
+      const response = await axios.get("https://auht-0.onrender.com/products",  {
       headers: {
         "Authorization": localStorage.getItem("token")
       }
