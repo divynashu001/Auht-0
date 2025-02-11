@@ -71,7 +71,7 @@ const Login = () => {
             value={loginInfo.password}
           />
         </div>
-        <button type="submit">Sign Up</button>
+        <button type="submit">Sign In</button>
         <span>
           Don't have an account?&nbsp;
           <Link to="/signup">Sign Up</Link>
